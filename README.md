@@ -9,6 +9,7 @@
 6. Stop the Program
 ## PROGRAM
 ## CLIENT
+
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -35,6 +36,8 @@ s.connect(('localhost',8000))
 while True: 
  print(s.recv(1024).decode())
  s.send("acknowledgement recived from the server".encode())
+
+ 
 ## OUPUT
 ## CLIENT
 ![image](https://github.com/mukitha24/2b_SLIDING_WINDOW_PROTOCOL/assets/154068225/aa254efe-8892-47c1-a784-78d1f5f2e46c)
